@@ -1,7 +1,7 @@
 import { type MetaFunction } from "@remix-run/node";
 import { useRef } from "react";
 
-import Logo from "assets/images/100-greatest-games.jpg";
+import Logo from "assets/images/10-greatest-games.jpg";
 import FooterDecorLines from "assets/images/bottom-lines.jpg";
 import AvatarContainer from "~/component/AvatarContainer";
 import Input from "~/component/Input";
@@ -26,7 +26,7 @@ export default function Index() {
   };
 
   return (
-    <div className="bg-black text-center bg-black py-8 border-black">
+    <div className="bg-black text-center py-8 border-black">
       <div className="border border-slate-50 w-[1084px] mx-auto h-[1084px]">
         <div
           className="w-[1080px] mx-auto h-[1080px] bg-black border-black relative p-[60px]"
