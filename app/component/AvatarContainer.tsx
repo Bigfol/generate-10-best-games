@@ -36,11 +36,14 @@ const AvatarContainer = () => {
           className="w-[160px] h-[160px] rounded-full hover:ring-2 ring-[#d6f059] transition-all border-black"
         >
           {resultImgCrop ? (
-            <img
-              src={resultImgCrop}
-              className="rounded-full w-[160px] h-[160px] filter bg-[#d6f059] border-black"
-              alt="crop avatar"
-            />
+            <div className="w-[160px] h-[160px] relative rounded-full overflow-hidden">
+              <div className="absolute top-0 left-0 w-[160px] h-[160px] bg-[#d6f059]" />
+              <img
+                src={resultImgCrop}
+                className="absolute z-10 rounded-full w-[160px] h-[160px] grayscale top-0 left-0 border-black"
+                alt="crop avatar"
+              />
+            </div>
           ) : (
             <img
               src={DefaultAvatarImg}
