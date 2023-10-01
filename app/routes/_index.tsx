@@ -26,7 +26,7 @@ export default function Index() {
   };
 
   return (
-    <div className="bg-black text-center h-screen pt-8 border-black">
+    <div className="bg-black text-center bg-black py-8 border-black">
       <div className="border border-slate-50 w-[1084px] mx-auto h-[1084px]">
         <div
           className="w-[1080px] mx-auto h-[1080px] bg-black border-black relative p-[60px]"
